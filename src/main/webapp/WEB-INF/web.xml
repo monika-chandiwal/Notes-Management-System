@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>NoteTaker Web Application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SaveNoteServlet</display-name>
+    <servlet-name>SaveNoteServlet</servlet-name>
+    <servlet-class>com.servlets.SaveNoteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveNoteServlet</servlet-name>
+    <url-pattern>/SaveNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteServelt</display-name>
+    <servlet-name>DeleteServelt</servlet-name>
+    <servlet-class>com.servlets.DeleteServelt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServelt</servlet-name>
+    <url-pattern>/DeleteServelt</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateServlet</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.servlets.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
